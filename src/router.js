@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import CoachDetail from './pages/coaches/CoachDetail.vue';
-import CoachesList from './pages/coaches/CoachesList.vue';
-import CoachRegister from './pages/coaches/CoachRegister.vue';
-import ContactCoach from './pages/requests/ContactCoach.vue';
-import RequestReceived from './pages/requests/RequestReceived.vue';
-import NotFound from './pages/NotFound.vue';
+import CoachDetail from 'CoachDetail.vue';
+import CoachesList from 'CoachesList.vue';
+import CoachRegister from '/CoachRegister.vue';
+import ContactCoach from 'ContactCoach.vue';
+import RequestReceived from 'RequestReceived.vue';
+import NotFound from 'NotFound.vue';
 
-const router = createRouter({
+export const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/coaches', component: CoachesList },
